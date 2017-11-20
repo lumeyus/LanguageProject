@@ -14,6 +14,12 @@ Need to verify files follow specifications. (a-z lowercase and ' 's only)
 
 ## Classes? Subclasses?
 
+- private instance variables for language name and array of trigram frequency numbers
+- needs a constructor method to create object by reading from a files
+- needs accessor to trigram frequency arrays to compare to training data frequency arrays
+
+Could make a method that compares the first x characters of a trigram to figure out frequencies quicker
+(similar to how the translate() method worked on the DNA class)
 
 ## What files will we need?
 
