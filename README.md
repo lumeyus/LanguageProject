@@ -1,19 +1,34 @@
-# Luis Ibanez
-# Zachary Miller
-# CSC 211 Final Language Project
+## Luis Ibanez
+## Zachary Miller
+## CSC 211 Final Language Project
 
-## What small problems to solve?  How to solve?
+# What small problems to solve?  How to solve?
 
+
+# Classes? Subclasses?
 Need to figure out how to get trigram frequencies from both test and training data.
 
-- Need a function to read input files
-- Need a function to read store trigram data of files into a map or arrays
-- Need way to test out if trigram data is being stored correctly (printing?)
+# What files will we need?
 
-Need to verify files follow specifications. (a-z lowercase and ' 's only)
+# Milestone 1 main?
 
-## Classes? Subclasses?
+# Milestone 2 main?
 
+# Libraries?
++ trigram.h
++ language.h
++ string
++ vector
++ algorithm
++ using namespace std
+
+# Files that compile script will need?
+We will need to compile:
++ trigram.h
++ language.h
++ language.cpp
++ langtraining.cpp
++ main.cpp
 A Language class that stores a language and it's trigram frequencies
 
 - private instance variables for language name and array of trigram frequency numbers
