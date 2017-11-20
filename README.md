@@ -4,12 +4,7 @@
 
 ## What small problems to solve?  How to solve?
 
-<<<<<<< HEAD
-
-# Classes? Subclasses?
-=======
 Need to figure out how to get trigram frequencies from both test and training data.
->>>>>>> ReadMeSetup
 
 - Need a function to read input files
 - Need a function to read store trigram data of files into a map or arrays
@@ -19,23 +14,6 @@ Need to verify files follow specifications. (a-z lowercase and ' 's only)
 
 ## Classes? Subclasses?
 
-<<<<<<< HEAD
-# Libraries?
-+ trigram.h
-+ language.h
-+ string
-+ vector
-+ algorithm
-+ using namespace std
-
-# Files that compile script will need?
-We will need to compile:
-+ trigram.h
-+ language.h
-+ language.cpp
-+ langtraining.cpp
-+ main.cpp
-=======
 A Language class that stores a language and it's trigram frequencies
 
 - private instance variables for language name and array of trigram frequency numbers
@@ -54,6 +32,11 @@ Could make a method that compares the first x characters of a trigram to figure 
 
 ## Milestone 1 main?
 
+Need main to test trigram frequency function.
+- Has to print out frequency array from '   ' to 'zzz'
+- Has to get trigram frequency given an input string from command line arg
+- Needs to store data in form of array to print
+- Inspect results of trigram by hand
 
 
 ## Milestone 2 main?
@@ -63,4 +46,3 @@ Could make a method that compares the first x characters of a trigram to figure 
 
 
 ## Files that compile script will need?
->>>>>>> ReadMeSetup
