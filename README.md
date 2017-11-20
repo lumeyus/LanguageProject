@@ -14,6 +14,8 @@ Need to verify files follow specifications. (a-z lowercase and ' 's only)
 
 ## Classes? Subclasses?
 
+A Language class that stores a language and it's trigram frequencies
+
 - private instance variables for language name and array of trigram frequency numbers
 - needs a constructor method to create object by reading from a files
 - needs accessor to trigram frequency arrays to compare to training data frequency arrays
@@ -23,6 +25,10 @@ Could make a method that compares the first x characters of a trigram to figure 
 
 ## What files will we need?
 
++ trigram.h for templated trigram frequency calculator
++ language.h and language.cpp for Language class
++ langtraining.cpp as implementation of machine language learning
++ main.cpp to test behavior of language class and trigram frequency calculation
 
 ## Milestone 1 main?
 
