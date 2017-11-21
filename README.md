@@ -49,6 +49,13 @@ Need main to test trigram frequency function.
 + string
 + vector
 + algorithm
-+ using namespace std 
++ using namespace std
 
 ## Files that compile script will need?
+
+We will need to compile:
++ trigram.h
++ language.h
++ language.cpp
++ langtraining.cpp
++ main.cpp
