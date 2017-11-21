@@ -17,7 +17,7 @@ Need to verify files follow specifications. (a-z lowercase and ' 's only)
 A Language class that stores a language and it's trigram frequencies
 
 - private instance variables for language name and array of trigram frequency numbers
-- needs a constructor method to create object by reading from a files
+- needs a constructor method to create object by reading from a file
 - needs accessor to trigram frequency arrays to compare to training data frequency arrays
 
 Could make a method that compares the first x characters of a trigram to figure out frequencies quicker
@@ -38,9 +38,12 @@ Need main to test trigram frequency function.
 - Needs to store data in form of array to print
 - Inspect results of trigram by hand
 
-
 ## Milestone 2 main?
 
+Need main to test trigram frequency between training and test data, includes:
+- creating a language object for each training data file
+- creating an unnamed language object using the test data files
+- compare the frequencies using a bool operator from language class
 
 ## Libraries?
 
@@ -59,3 +62,5 @@ We will need to compile:
 + language.cpp
 + langtraining.cpp
 + main.cpp
+
+## PS. The git log only shows one account making all the changes, however we tried using Zach's computer but the commits wouldn't function with the commits already made which ended up messing up the readme file in some wierd ways (putting random >>>>>>>>>>>> and ========== signs everywhere)
