@@ -36,7 +36,7 @@ Need main to test trigram frequency function.
 - Has to print out frequency array from '   ' to 'zzz'
 - Has to get trigram frequency given an input string from command line arg
 - Needs to store data in form of array to print
-- Inspect results of trigram by hand
+- Inspect results of trigram calculator by hand
 
 ## Milestone 2 main?
 
@@ -63,4 +63,4 @@ We will need to compile:
 + langtraining.cpp
 + main.cpp
 
-## PS. The git log only shows one account making all the changes, however we tried using Zach's computer but the commits wouldn't function with the commits already made which ended up messing up the readme file in some wierd ways (putting random >>>>>>>>>>>> and ========== signs everywhere)
+## PS. The git log only shows one account making all the changes, however we tried using Zach's computer but the commits wouldn't function with the commits already made which ended up messing up the readme file in some weird ways (putting random >>>>>>>>>>>> and ========== signs everywhere)
