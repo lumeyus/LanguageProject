@@ -53,6 +53,8 @@ Need main to test trigram frequency between training and test data, includes:
 + vector
 + algorithm
 + using namespace std
++ iostream
++ fstream
 
 ## Files that compile script will need?
 

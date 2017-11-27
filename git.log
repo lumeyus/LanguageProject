@@ -1,0 +1,121 @@
+commit 4dd72234f34aa9b28a02359ef284b09b7eb10861
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 19:42:44 2017 -0500
+
+    final edits
+
+commit 727517984d59ad144d2561bdfb8ee0272d4a7403
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 19:35:58 2017 -0500
+
+    Milestone 2 (Readme finished)
+
+commit 375d54a10db4c9165275123ee580f5b6961e66d8
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 19:26:01 2017 -0500
+
+    Files To Compile
+
+commit a099f0fc9616386d0042f5ee80672bdd60e59359
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 19:25:38 2017 -0500
+
+    Libraries
+
+commit 0c959146746b087a901218a4e1e5aa0d02e3c930
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 19:24:58 2017 -0500
+
+    Redo everything cus git broke our outline
+
+commit 280ca69cd1b9d59e387c98d1718747c025e9651b
+Merge: 1dbbaaf 81332dc
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 18:39:09 2017 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 1dbbaaff48b0c64b8ea41844cea4a498dcc3f2e7
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 18:35:21 2017 -0500
+
+    Libraries + Files
+    
+    This reverts commit e11f7f6967b7cc3612720b440843f3986f8cc2f1.
+
+commit 81332dc142ac4cbfdc47d37faa169d20ec4f576f
+Merge: 849a3f2 a44bb3c
+Author: unknown <unknown@example.com>
+Date:   Mon Nov 20 18:30:11 2017 -0500
+
+    Merge branch 'master' into ReadMeSetup(2)
+
+commit a44bb3c7dc3fc514cb47f8a2ebcabc58f6a0e968
+Merge: 0f5f2c0 849a3f2
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 18:29:58 2017 -0500
+
+    Merge branch 'ReadMeSetup(2)'
+
+commit 849a3f2ed31b651d040d5ea42ec2e44dbfe547bd
+Merge: e11f7f6 0f5f2c0
+Author: unknown <unknown@example.com>
+Date:   Mon Nov 20 18:28:55 2017 -0500
+
+    Merge branch 'master' into ReadMeSetup(2)
+
+commit 0f5f2c0584015a200a98dcbdc3713c4407168572
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 18:28:40 2017 -0500
+
+    Milestone 1
+
+commit e11f7f6967b7cc3612720b440843f3986f8cc2f1
+Merge: 9f53245 5b800bd
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 18:27:12 2017 -0500
+
+    Merge branch 'master' into ReadMeSetup(2)
+
+commit 5b800bd61aa3237236001c3cd1cd63e5e6ccb317
+Merge: 9f53245 a0aefb8
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 18:24:05 2017 -0500
+
+    Merge branch 'ReadMeSetup'
+
+commit 9f53245ce187ace264d7cc9a00ae5327695bbde6
+Author: Zachlvl <zachmiller18@my.uri.edu>
+Date:   Mon Nov 20 18:16:19 2017 -0500
+
+    Added Lib + Files to Compile
+
+commit a0aefb82e7f9b87fb9d21f8369f7845e2062b149
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 17:56:14 2017 -0500
+
+    Files needed
+
+commit e5ab95bbb11fd4c5aad9b458d0de24822e26eb85
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 17:55:14 2017 -0500
+
+    Classes
+
+commit 19af41dc6a4c9ab0395d79fbaf0ea406cd183888
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 17:54:45 2017 -0500
+
+    Problems To Solve
+
+commit 6444c0e1ab1999796757b5955707361191c6b962
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Sun Nov 19 22:42:51 2017 -0500
+
+    Outling the outline
+
+commit fa71a662f512616afff93c092a28beedb0ddfa53
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Sun Nov 19 22:29:57 2017 -0500
+
+    Initial commit

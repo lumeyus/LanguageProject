@@ -1,0 +1,25 @@
+commit 4dd72234f34aa9b28a02359ef284b09b7eb10861 (HEAD -> master, origin/master)
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 19:42:44 2017 -0500
+
+    final edits
+
+commit 727517984d59ad144d2561bdfb8ee0272d4a7403
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 19:35:58 2017 -0500
+
+    Milestone 2 (Readme finished)
+
+commit 375d54a10db4c9165275123ee580f5b6961e66d8
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 19:26:01 2017 -0500
+
+    Files To Compile
+
+commit a099f0fc9616386d0042f5ee80672bdd60e59359
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 20 19:25:38 2017 -0500
+
+    Libraries
+
+There were a lot more commits (can show on gitkraken) but they didn't show up on the log
