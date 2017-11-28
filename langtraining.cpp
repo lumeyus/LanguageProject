@@ -50,7 +50,7 @@ map<string, int> allTris()
     for(int i = 0; i < 19683; i++)
     {
         string trigram = "";
-// Check if each digit needs to be incremented
+// Check if each digit needs to be incremented, otherwise add characters using alphabet map to trigram and store
         if (firstDig == 27 && secDig == 27 && thirdDig == 27)
             {break;}
         else if (secDig == 27 && thirdDig == 27)
