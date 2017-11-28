@@ -11,7 +11,7 @@ Returns a map of trigrams with key being the trigram and value the frequency of 
 map<string, int> trigrams(string input);
 
 /*
-Returns a map of all trigrams ("   " to "zzz")
+Returns a map of all trigrams with frequency 0 for each one ("   " to "zzz")
 */
 map<string, int> allTris();
 
