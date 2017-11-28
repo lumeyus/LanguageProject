@@ -26,6 +26,34 @@ map<string, int> trigrams(string input)
 map<string, int> allTris()
 {
     map<string, int> everyTri;
+
+    // Digit for each char in trigram
+    int firstDig = 0;
+    int secDig = 0;
+    int thirdDig = 0;
+
     for(int i = 0; i < 19683; i++)
-    
+    {
+        string trigram = ""
+
+        if (firstDig == 27 && secDig == 27 && thirdDig == 27)
+            {break;}
+        else if (secDig == 27 && thirdDig == 27)
+        {
+            firstDig += 1;
+            secDig = 0;
+            thirdDig = 0;
+        }
+        else if (thirdDig == 27)
+        {
+            secDig += 1;
+            thirdDig = 0;
+        }
+        else
+        {
+            trigram += alphabet[firstDig] + alphabet[secDig] + alphabet[thirdDig];
+        }        
+        everyTri[trigram] = 0
+    }
+    return everyTri;
 }
