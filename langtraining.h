@@ -18,6 +18,6 @@ map<string, int> allTris();
 /*
 Returns a string with frequencies of each trigram ("   " to "zzz") seperated by spaces
 */
-string frequencies(map trigrams);
+string frequencies(map trigrams, map allTris);
 
 #endif
