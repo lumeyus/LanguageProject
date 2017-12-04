@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <iostream>
 
 using namespace std;
 
@@ -27,18 +28,19 @@ map<string, int> allTris()
     // Map of alphabet to help make map of all trigrams
     map<int, char> alphabet;
     alphabet[0] = ' ';
-    for (int i = 0; i < 26; i++)
-        alphabet[i] = 'a' + i;
+    for (int i = 1; i < 27; i++)
+        alphabet[i] = 'a' + i - 1;
 
     for (int i = 0; i < 27; i++)
-    {
-        string trigram1 = string(1, alphabet[i]);
+    {   // Add first letter as string
+        string trigram1 = "";
+        trigram1 += alphabet[i];
         for (int j = 0; j < 27; j++)
-        {
-            string trigram2 = trigram1 + string(1, alphabet[j]);
+        {   // Add second letter as string
+            string trigram2 = trigram1 + alphabet[j];
             for (int k = 26; k >= 0; k--)
-                {
-                    string trigram3 = trigram2 + string(1, alphabet[k]);
+                {   // Add third letter as string
+                    string trigram3 = trigram2 + alphabet[k];
                     everyTri[trigram3] = 0;
                 }
         }

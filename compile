@@ -13,4 +13,4 @@ rm -f *.o
 
 # compile
 
-$CPP $FLAGS -o frequency langtraining.cpp main.cpp
+$CPP $FLAGS -o frequencies langtraining.cpp main.cpp

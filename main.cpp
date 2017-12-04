@@ -13,13 +13,15 @@ int main(int argc, char *argv[])
     trigrams(argv[1], everyTri);
 
     map<string, int>::iterator it;
+
     for (it = everyTri.begin(); it != everyTri.end(); it++)
     {
-        cout << it->first << "- ";
-        /*
-        if (it->second != 0)
-            cout << it->first << endl;
-        */
+        cout << it->second
+        if (it ->first == "zzz")
+            break;
+        else
+            cout << " ";
     }
     cout << endl;
+    return 0;
 }
