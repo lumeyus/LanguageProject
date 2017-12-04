@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <iostream>
 
 using namespace std;
 
@@ -14,7 +15,11 @@ int main(int argc, char *argv[])
     map<string, int>::iterator it;
     for (it = everyTri.begin(); it != everyTri.end(); it++)
     {
-        cout << it->second << " ";
+        cout << it->first << "- ";
+        /*
+        if (it->second != 0)
+            cout << it->first << endl;
+        */
     }
     cout << endl;
 }
