@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
     for (it = everyTri.begin(); it != everyTri.end(); it++)
     {
-        cout << it->second
+        cout << it->second;
         if (it ->first == "zzz")
             break;
         else
