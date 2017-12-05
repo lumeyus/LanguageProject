@@ -13,6 +13,7 @@ void trigrams(string input, map<string, int> &allTrigrams)
 {
     for (size_t j = 0; j < input.length() - 2; j++)
     {
+        // Go through string and increment frequency of each trigram found in allTrigrams map
         string trigram = input.substr(j,3);
         allTrigrams[trigram] += 1;
     }

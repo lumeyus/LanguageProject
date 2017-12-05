@@ -6,22 +6,10 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[])    // Argv 1 - (argc - 1) test files, (argc - 1) = test file
 {
-    if (argc != 2){exit(EXIT_FAILURE);}
-    map<string, int> everyTri = allTris();
-    trigrams(argv[1], everyTri);
+    if (argc <= 1){exit(EXIT_FAILURE);}
+    cout << argv[argc-1] << endl;
 
-    map<string, int>::iterator it;
-
-    for (it = everyTri.begin(); it != everyTri.end(); it++)
-    {
-        cout << it->second;
-        if (it ->first == "zzz")
-            break;
-        else
-            cout << " ";
-    }
-    cout << endl;
     return 0;
 }

@@ -1,3 +1,107 @@
+commit 8d9aba6296cd1eeb0dc8fc67455ea4b3cfb810d3
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Dec 4 14:42:49 2017 -0500
+
+    fixed submission errors
+
+commit f5ab3fb04ee8e7fb0e4a78bdeba34bf83faefd37
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Dec 4 14:29:45 2017 -0500
+
+    FIxed alphabet map, final result prints correctly
+    
+    changed frequency to frequencies in compile script
+
+commit f8fc4a86687539ea1b2387bc5004c5a0370c86da
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Sun Dec 3 23:32:27 2017 -0500
+
+    Added compile file, fixed other files to work with them
+    
+    Need to fix either main printing or langraining.cpp for loops to print out spaces in terminal, ordering is currently weird when printing
+
+commit becc048547d10c13a82353761c982992e4d4ac97
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Sun Dec 3 22:49:18 2017 -0500
+
+    Improved langtraining design, altered main to match new design
+
+commit 70501e24dc664061d8e5d5206210fba91c2370fe
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Tue Nov 28 16:39:53 2017 -0500
+
+    another slight main change
+
+commit 3db78e0bce74f161a54c3c0bffeb38c569790528
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Tue Nov 28 16:28:50 2017 -0500
+
+    added comment in allTris
+
+commit bc84b7429f37294308455a7c20ae81c51312e547
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Tue Nov 28 16:27:49 2017 -0500
+
+    Finished allTris and trigrams functions, slight change to main
+
+commit 27446f2210abb2fb23ee2d34e1121f8b368b0fba
+Author: Zachlvl <zachmiller18@my.uri.edu>
+Date:   Tue Nov 28 15:29:18 2017 -0500
+
+    Main edit
+    
+    print freq
+
+commit 3fd316475af7fb8fc8b33f56f86fe73f8cbcec82
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Tue Nov 28 15:19:27 2017 -0500
+
+    Changed frequency in langtraining.h to use all trigrams
+
+commit 37c1ab9e0cbd225767ee45c80dfa04d688312583
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Tue Nov 28 15:15:55 2017 -0500
+
+    First attempt at making map of all trigrams
+
+commit 193f6b1dfaf9108815ccdf6646bb129ac6afa031
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Tue Nov 28 14:54:10 2017 -0500
+
+    Making main
+
+commit 8e8f694a40ce5de956dfece42b3306ac65dce9b9
+Author: Zachlvl <zachmiller18@my.uri.edu>
+Date:   Tue Nov 28 14:09:01 2017 -0500
+
+    test
+    
+    comment
+
+commit fec9c57d23de3284e38d1633a1d19e04d6db2bdf
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Tue Nov 28 14:07:21 2017 -0500
+
+    more edits, fixing git on other computer before continuing
+
+commit 80c7af34effcc561f881bcf0b6203cdb72fed0eb
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Tue Nov 28 12:35:43 2017 -0500
+
+    fixed langtraining header, started cpp
+
+commit ab5a0711c596c03614c4e68fde9cece9561f50ec
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Tue Nov 28 10:52:18 2017 -0500
+
+    Set up langtraining header
+
+commit 2ad5df7e44fa9835138d26471e89eb325e9f742d
+Author: Unknown <luisfibanez@my.uri.edu>
+Date:   Mon Nov 27 15:37:18 2017 -0500
+
+    Created necessary files
+
 commit 4dd72234f34aa9b28a02359ef284b09b7eb10861
 Author: Unknown <luisfibanez@my.uri.edu>
 Date:   Mon Nov 20 19:42:44 2017 -0500
