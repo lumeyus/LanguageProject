@@ -15,7 +15,7 @@ int main(int argc, char *argv[])    // Argv[1 -> (argc - 2)] = language files, [
     // Make language object for test file
     ifstream infile;
     infile.open(argv[argc-1]);
-    Language testlang (argv[argc-1], infile);
+    Language testLang (argv[argc-1], infile);
     infile.close();
 
     // Make language objects for training data
@@ -28,5 +28,14 @@ int main(int argc, char *argv[])    // Argv[1 -> (argc - 2)] = language files, [
         trainingData.push_back(trainingLang);
         infile.close();
     }
+
+    int similarities[argc - 2];
+    for (i = 0; i < argc - 2; i++)
+    {
+        int similarity = simCheck(testLang.getTrigrams, trainingData[i].getTrigrams);
+        similarities += similarity;
+    }
+
+    cout << similarities[max_element(similarities)] << endl;
     return 0;
 }
