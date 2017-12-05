@@ -3,8 +3,8 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include "dna.h"
 #include "langtraining.h"
+#include "language.h"
 
 using namespace std;
 
@@ -21,16 +21,13 @@ language::language(string nameStr, map<string, int> trigramsMap)
     if (trigrams.size() != 19863) exit(EXIT_FAILURE);
 }
 
-language::language(ifstream &infile, string fileName)
+language::language(string fileName, ifstream &infile)
 {
     string fileText = "";
-    for (string line; getline(infile, line);)
-    {
-        fileText += line;
-    }
+    char ch;
+	while(infile.get(ch)){fileText += ch;}
     map<string, int> everyTri = allTris();
     trigrams(fileText, everyTri);
-    language(fileName, everyTri);
 }
 
 string getName()
@@ -38,7 +35,7 @@ string getName()
     return name;
 }
 
-map<string, int> trigrams()
+map<string, int> getTrigrams()
 {
     return trigrams;
 }

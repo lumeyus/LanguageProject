@@ -6,7 +6,6 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include "dna.h"
 #include "langtraining.h"
 
 using namespace std;
@@ -22,7 +21,7 @@ class language
 
 public:
     // Default Constructor
-    langauge();
+    language();
 
     // Constructor with arguments for name and trigrams
     language(string name, map<string, int> trigrams);
@@ -31,7 +30,7 @@ public:
     Constructor that takes input file stream to a text files
     File is expected to contain only characters including ' ' and 'a' - 'z'
     */
-    language(ifstream &infile, string fileName);
+    language(string fileName, ifstream &infile);
 
     // Getter methods
     string getName();
@@ -41,4 +40,7 @@ private:
     // Instance variables
     string name;
     map<string, int> trigrams;
-}
+};
+
+
+#endif
