@@ -16,21 +16,21 @@ A language object has two member fields: a name, to identify what language is be
 and a map of its trigrams, which contains all 19683 possible trigrams from "   " to "zzz"
 */
 
-class language
+class Language
 {
 
 public:
     // Default Constructor
-    language();
+    Language();
 
     // Constructor with arguments for name and trigrams
-    language(string name, map<string, int> trigrams);
+    Language(string name, map<string, int> trigrams);
 
     /*
     Constructor that takes input file stream to a text files
     File is expected to contain only characters including ' ' and 'a' - 'z'
     */
-    language(string fileName, ifstream &infile);
+    Language(string fileName, ifstream &infile);
 
     // Getter methods
     string getName();
@@ -39,7 +39,7 @@ public:
 private:
     // Instance variables
     string name;
-    map<string, int> trigrams;
+    map<string, int> trigramsMap;
 };
 
 

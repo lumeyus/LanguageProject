@@ -8,34 +8,36 @@
 
 using namespace std;
 
-language::language()
+Language::Language()
 {
     name = "";
     map<string, int> trigrams;
 }
 
-language::language(string nameStr, map<string, int> trigramsMap)
+Language::Language(string nameStr, map<string, int> trigrams)
 {
     name = nameStr;
-    trigrams = trigramsMap;
-    if (trigrams.size() != 19863) exit(EXIT_FAILURE);
+    trigramsMap = trigrams;
+    if (trigramsMap.size() != 19863) exit(EXIT_FAILURE);
 }
 
-language::language(string fileName, ifstream &infile)
+Language::Language(string fileName, ifstream &infile)
 {
+    name = fileName;
     string fileText = "";
     char ch;
 	while(infile.get(ch)){fileText += ch;}
-    map<string, int> everyTri = allTris();
-    trigrams(fileText, everyTri);
+    map<string, int> everyTrigram = allTris();
+    trigrams(fileText, everyTrigram);
+    trigramsMap = everyTrigram;
 }
 
-string getName()
+string Language::getName()
 {
     return name;
 }
 
-map<string, int> getTrigrams()
+map<string, int> Language::getTrigrams()
 {
-    return trigrams;
+    return trigramsMap;
 }
