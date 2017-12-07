@@ -26,10 +26,8 @@ public:
     // Constructor with arguments for name and trigrams
     Language(string name, map<string, int> trigrams);
 
-    /*
-    Constructor that takes input file stream to a text files
-    File is expected to contain only characters including ' ' and 'a' - 'z'
-    */
+    // Constructor that takes input file stream to a text file
+    // File is expected to contain only characters ' ' and 'a' - 'z'
     Language(string fileName, ifstream &infile);
 
     // Getter methods

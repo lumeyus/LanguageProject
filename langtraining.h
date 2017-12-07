@@ -1,7 +1,8 @@
 #ifndef _langtraining_h
 #define _langtraining_h
-#include <map>
 #include <string>
+#include <map>
+#include <set>
 
 using namespace std;
 
@@ -16,8 +17,9 @@ Returns a map of all trigrams with frequency 0 for each one ("   " to "zzz")
 map<string, int> allTris();
 
 /*
-Returns a string with frequencies of each trigram ("   " to "zzz") seperated by spaces
-
-string frequencies(map<string, int> trigrams, map allTris);
+Returns similarity between two trigram maps
 */
+int simCheck(map<string, int> firstTrigrams, map<string, int> otherTrigrams);
+
+
 #endif

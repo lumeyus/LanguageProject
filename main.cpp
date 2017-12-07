@@ -3,6 +3,7 @@
 #include <string>
 #include <map>
 #include <iostream>
+#include <algorithm>
 #include "language.h"
 #include "langtraining.h"
 
@@ -29,13 +30,14 @@ int main(int argc, char *argv[])    // Argv[1 -> (argc - 2)] = language files, [
         infile.close();
     }
 
-    int similarities[argc - 2];
-    for (i = 0; i < argc - 2; i++)
+    // Calculate similarities for each language
+    vector<int> similarities;
+    for (int i = 0; i < argc - 2; i++)
     {
-        int similarity = simCheck(testLang.getTrigrams, trainingData[i].getTrigrams);
-        similarities += similarity;
+        similarities.push_back(simCheck(testLang.getTrigrams(), trainingData[i].getTrigrams()));
     }
 
-    cout << similarities[max_element(similarities)] << endl;
+    // Print language with highest similarity
+    cout << trainingData[max_element(similarities.begin(), similarities.end()) - similarities.begin()].getName() << endl;
     return 0;
 }

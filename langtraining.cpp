@@ -1,9 +1,7 @@
 #include "langtraining.h"
-#include <vector>
 #include <string>
 #include <map>
-#include <iostream>
-#include <fstream>
+#include <set>
 
 using namespace std;
 
@@ -48,4 +46,41 @@ map<string, int> allTris()
         }
     }
     return everyTri;
+}
+
+/*
+Function that returns the similarity between two maps of trigrams
+Creates a set adding the non-zero-frequency trigrams, then iterates through set
+calculating each summation of similarity formula and using those to calculate final similarity
+*/
+int simCheck(map<string, int> firstTrigrams, map<string, int> otherTrigrams)
+{
+    // Initialize sums and set to iterate through
+    unsigned int aTimesB = 0;
+    unsigned int aSquared = 0;
+    unsigned int bSquared = 0;
+    set<string> relevantTris;
+
+    // Add non-zero-frequency trigrams to set
+    map<string, int>::iterator it1;
+    for (it1 = firstTrigrams.begin(); it1 != firstTrigrams.end(); it1++)
+    {
+        if (firstTrigrams[it1->first] != 0 && otherTrigrams[it1->first] != 0)
+        {
+            relevantTris.insert(it1->first);
+        }
+    }
+
+    // Iterate through set, adding to sum of each similarity equation piece
+    set<string>::iterator it2;
+    for(it2 = relevantTris.begin(); it2 != relevantTris.end(); it2++)
+    {
+        aTimesB += (firstTrigrams[*it2] * otherTrigrams[*it2]);
+        aSquared += (firstTrigrams[*it2] * firstTrigrams[*it2]);
+        bSquared += (otherTrigrams[*it2] * otherTrigrams[*it2]);
+    }
+
+    // Calculate similarity and return
+    int similarity = aTimesB/(aSquared*bSquared);
+    return similarity;
 }
