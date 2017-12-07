@@ -3,6 +3,7 @@
 #include <string>
 #include <map>
 #include <iostream>
+#include <fstream>
 #include <algorithm>
 #include "language.h"
 #include "langtraining.h"

@@ -21,7 +21,7 @@ Language::Language(string nameStr, map<string, int> trigrams)
 {
     name = nameStr;
     trigramsMap = trigrams;
-    if (trigramsMap.size() != 19863) exit(EXIT_FAILURE);
+    if (trigramsMap.size() != 19683) exit(EXIT_FAILURE);
 }
 
 // Constructor that creates a Language object from a file input
@@ -36,7 +36,7 @@ Language::Language(string fileName, ifstream &infile)
     map<string, int> everyTrigram = allTris();
     trigrams(fileText, everyTrigram);
     trigramsMap = everyTrigram;
-    if (trigramsMap.size() != 19863) exit(EXIT_FAILURE);
+    if (trigramsMap.size() != 19683) exit(EXIT_FAILURE);
 }
 
 // Returns name of Language
