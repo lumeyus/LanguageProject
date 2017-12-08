@@ -3,6 +3,7 @@
 #include <map>
 #include <set>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -51,37 +52,26 @@ map<string, int> allTris()
 
 /*
 Function that returns the similarity between two maps of trigrams
-Creates a set adding the non-zero-frequency trigrams, then iterates through set
-calculating each summation of similarity formula and using those to calculate final similarity
+Calculates summation of each portion of similarity equation by iterating through
+each language trigrams map
 */
-int simCheck(map<string, int> firstTrigrams, map<string, int> otherTrigrams)
+double simCheck(map<string, int> firstTrigrams, map<string, int> otherTrigrams)
 {
     // Initialize sums and set to iterate through
-    unsigned int aTimesB = 0;
-    unsigned int aSquared = 0;
-    unsigned int bSquared = 0;
-    set<string> relevantTris;
+    unsigned long aTimesB = 0;
+    unsigned long aSquared = 0;
+    unsigned long bSquared = 0;
 
-    // Add non-zero-frequency trigrams to set
-    map<string, int>::iterator it1;
-    for (it1 = firstTrigrams.begin(); it1 != firstTrigrams.end(); it1++)
+    // Iterate through map and add to summation of each portion of similarity equation
+    map<string, int>::iterator it;
+    for (it = firstTrigrams.begin(); it != firstTrigrams.end(); it++)
     {
-        if (firstTrigrams[it1->first] != 0 && otherTrigrams[it1->first] != 0)
-        {
-            relevantTris.insert(it1->first);
-        }
-    }
-
-    // Iterate through set, adding to sum of each similarity equation piece
-    set<string>::iterator it2;
-    for(it2 = relevantTris.begin(); it2 != relevantTris.end(); it2++)
-    {
-        aTimesB += (firstTrigrams[*it2] * otherTrigrams[*it2]);
-        aSquared += (firstTrigrams[*it2] * firstTrigrams[*it2]);
-        bSquared += (otherTrigrams[*it2] * otherTrigrams[*it2]);
+        aTimesB += (firstTrigrams[it->first] * otherTrigrams[it->first]);
+        aSquared += (firstTrigrams[it->first] * firstTrigrams[it->first]);
+        bSquared += (otherTrigrams[it->first] * otherTrigrams[it->first]);
     }
 
     // Calculate similarity and return
-    int similarity = aTimesB/(aSquared*bSquared);
+    double similarity = aTimesB/(sqrt(aSquared)*sqrt(bSquared));
     return similarity;
 }

@@ -3,6 +3,7 @@
 #include <string>
 #include <map>
 #include <set>
+#include <math.h>
 
 using namespace std;
 
@@ -19,7 +20,7 @@ map<string, int> allTris();
 /*
 Returns similarity between two trigram maps
 */
-int simCheck(map<string, int> firstTrigrams, map<string, int> otherTrigrams);
+double simCheck(map<string, int> firstTrigrams, map<string, int> otherTrigrams);
 
 
 #endif
