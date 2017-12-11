@@ -4,6 +4,7 @@
 #include <set>
 #include <iostream>
 #include <cmath>
+#include <algorithm>
 
 using namespace std;
 
@@ -58,20 +59,23 @@ each language trigrams map
 double simCheck(map<string, int> firstTrigrams, map<string, int> otherTrigrams)
 {
     // Initialize sums and set to iterate through
-    unsigned long aTimesB = 0;
-    unsigned long aSquared = 0;
-    unsigned long bSquared = 0;
+    unsigned long long aTimesB = 0;
+    unsigned long long aSquared = 0;
+    unsigned long long bSquared = 0;
 
     // Iterate through map and add to summation of each portion of similarity equation
     map<string, int>::iterator it;
     for (it = firstTrigrams.begin(); it != firstTrigrams.end(); it++)
     {
-        aTimesB += (firstTrigrams[it->first] * otherTrigrams[it->first]);
-        aSquared += (firstTrigrams[it->first] * firstTrigrams[it->first]);
-        bSquared += (otherTrigrams[it->first] * otherTrigrams[it->first]);
+        aTimesB += (unsigned long long)(firstTrigrams[it->first]) * (unsigned long long)(otherTrigrams[it->first]);
+        aSquared += (unsigned long long)(firstTrigrams[it->first]) * (unsigned long long)(firstTrigrams[it->first]);
+        bSquared += (unsigned long long)(otherTrigrams[it->first]) * (unsigned long long)(otherTrigrams[it->first]);
     }
 
     // Calculate similarity and return
-    double similarity = aTimesB/(sqrt(aSquared)*sqrt(bSquared));
+    double bottom1 = sqrt(aSquared);
+    double bottom2 = sqrt(bSquared);
+    double bottom = bottom1*bottom2;
+    double similarity = aTimesB/bottom;
     return similarity;
 }
